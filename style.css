@@ -1,0 +1,99 @@
+body{
+    margin: 6%;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.header-text{
+    
+    padding-left: 13px;
+    font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  border-left: 5px solid #FF5959;
+  line-height: 30px;
+}
+
+.orange-text{
+    color: #FFAD5A;
+}
+.hero-text{
+    font-family: "poppins";
+    width: 471px;
+    font-size: 18px;
+}
+
+.explore-btn{
+    height: 48px;
+    width: 171px;
+    background-color: #FF5959;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+/* 
+.outer-circle{
+    height: 426px;
+    width: 426px;
+    background-image: linear-gradient(to right, #FFF2EA , #D0F4FA);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle{
+ height: 312px;
+    width: 312px;
+    background-color: #FEE4CD;
+    border-radius: 100%;
+}
+
+.inner-circle img{
+    
+    width: 317px;
+} */
+
+.outer-circle {
+  height: 426px;
+  width: 426px;
+  background-image: linear-gradient(to right, #FFF2EA , #D0F4FA);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible; /* Allow overflow for head */
+}
+
+.inner-circle {
+  height: 312px;
+  width: 312px;
+  background-color: #FEE4CD;
+  border-radius: 50%;
+  position: relative;
+  /* overflow: hidden; clip anything outside */
+}
+
+/* Wrapping image inside another div for better control */
+.image-wrapper {
+  position: absolute;
+  /* top: -40px; adjust to control how much head sticks out */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 312px;
+  height: auto;
+  z-index: 2;
+}
+
+/* Image fits normally */
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
