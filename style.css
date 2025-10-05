@@ -97,3 +97,38 @@ body{
   display: block;
   border-radius: 50%;
 }
+
+.mission-section{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.mission-section img{
+  width: 141px;
+  height: 141px;
+}
+
+.mission-section div{
+  padding: 24px;
+  height: 376px;
+  height: 360px;
+  border-radius: 26px;
+  
+}
+
+.mission{
+background-color: #4F9DA61A;
+}
+.vision{
+background-color: #FF59591A;
+}
+.goals{
+background-color: #FFF4D6;
+}
+.mission-header{
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 48px;
+}
